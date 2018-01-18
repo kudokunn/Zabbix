@@ -15,5 +15,9 @@ Bước 3:  Vào configuration => Action => Chọn "Report problems to Zabbix ad
  Ví dụ về trigger bộ nhớ ram
  ![](image/6.png)
  
+ Xem tại Trigger
+ ![](image/7.png)
  
+ Xem tại Issue
+ ![](image/8.png)
  
