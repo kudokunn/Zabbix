@@ -12,7 +12,8 @@ Bước 3:  Vào configuration => Action => Chọn "Report problems to Zabbix ad
  * Operation: Cấu hình tùy chọn: Send to User groups hoặc Send to Users
  ![](image/5.png)
  Bước 4: Tạo problem cho trigger: Chỉnh trigger trong host để tạo issue
- 
+ Ví dụ về trigger bộ nhớ ram
+ ![](image/6.png)
  
  
  
