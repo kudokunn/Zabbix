@@ -33,6 +33,7 @@ Zabbix-agent2: 192.168.0.106
           gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
           gpgcheck=1
   Ubuntu:
+  
         $ sudo apt install software-properties-common
         $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
         $ sudo vim /etc/apt/sources.list.d/mariadb.list
@@ -48,6 +49,7 @@ Zabbix-agent2: 192.168.0.106
         yum install mariadb or apt install mysql
 ### 3.3 Cấu hình:
 Mariadb:
+
         service mysql start
         Thực hiện: mysql_secure_installtion;
         mysql -u root -p;
@@ -58,6 +60,7 @@ Mariadb:
 Zabbix:
 Import database zabbix: zcat /usr/share/doc/zabbix-proxy-mysql-3.2.X/schema.sql.gz | mysql -uzabbix -p   zabbix
 Cấu hình:  vim /etc/zabbix/zabbix_proxy.conf
+         
          Server=IP-Zabbix-Server(192.168.0.4)
          Hostname=zbx_proxy
          DBName=zabbix
