@@ -3,14 +3,14 @@
 IP của các Server:
 Zabbix-server: 192.168.0.104
 Zabbix-proxy: 192.168.0.105
-Zabbix-agent1: 192.168.0.103
-Zabbix-agent2: 192.168.0.106
+Zabbix-agent1: 192.168.0.103 với hostname trên cấu hình web: Centos 7
+Zabbix-agent2: 192.168.0.106 với hostname trên cấu hình web: Centos 6
 
 ## 2. Cấu hình Zabbix-proxy:
 - Thêm repo để cài Zabbix-proxy và MariaDB nếu dùng centos 7, ubuntu 16
 - Cài đặt Zabbix-proxy và MariaDB
-- Cấu hình Database trong mariadb và Zabbix-proxy, và Zabbix-Server WEB
-- Khởi động service và tạo onboot
+- Cấu hình Database trong mariadb và Zabbix-proxy
+- Cấu hình trên Zabbix-agent và Zabbix-Server WEB
 
 ## 3. Thực hiện
 ### 3.1 Thêm repo
@@ -67,6 +67,18 @@ Cấu hình:  vim /etc/zabbix/zabbix_proxy.conf
          DBUser=zabbix
          DBPassword=minh
 Khởi động service: service zabbix-proxy start && systemctl enable zabbix-proxy
-### 3.4: Cấu hình trên Web:
+### 3.4: Cấu hình trên Zabbix-server-web và Agent
 
+- Zabbix-server-web:
+
+
+
+
+
+- Zabbix-agent: Chỉnh file: vim /usr/local/etc/zabbix_agentd.conf
+      
+      Server=Proxy_Servers_IP (192.168.0.5)
+      ServerActive=Proxy_Servers_IP (192.168.0.5)
+      Hostname=Hostname in web ( Centos 7 or Centos 6)
+Restart service: service zabbix-agent restart
 
