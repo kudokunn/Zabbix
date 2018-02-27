@@ -57,7 +57,7 @@ Mariadb:
         create user 'zabbix'@'localhost' identified by 'minh';
         grant all privileges on * . * to 'zabbix'@'localhost';
         flush privileges;
-Zabbix:
+Zabbix_proxy:
 Import database zabbix: zcat /usr/share/doc/zabbix-proxy-mysql-3.2.X/schema.sql.gz | mysql -uzabbix -p   zabbix
 Cấu hình:  vim /etc/zabbix/zabbix_proxy.conf
          
@@ -65,20 +65,24 @@ Cấu hình:  vim /etc/zabbix/zabbix_proxy.conf
          Hostname=zbx_proxy
          DBName=zabbix
          DBUser=zabbix
-         DBPassword=minh
+         DBPassword=minh 
 Khởi động service: service zabbix-proxy start && systemctl enable zabbix-proxy
+
+Zabbix-server-web:
+![](image/Zabbix1.png)
+
 ### 3.4: Cấu hình trên Zabbix-server-web và Agent
 
 - Zabbix-server-web:
 
-
-
-
+![](image/zabbix2.png)
+![](image/zabbix3.png)
 
 - Zabbix-agent: Chỉnh file: vim /usr/local/etc/zabbix_agentd.conf
       
       Server=Proxy_Servers_IP (192.168.0.5)
       ServerActive=Proxy_Servers_IP (192.168.0.5)
       Hostname=Hostname in web ( Centos 7 or Centos 6)
+      
 Restart service: service zabbix-agent restart
 
