@@ -80,10 +80,10 @@ Zabbix-server-web:
 
 - Zabbix-agent:
 
-      Chỉnh file: vim /usr/local/etc/zabbix_agentd.conf
-      Server=Proxy_Servers_IP (192.168.0.5)
-      ServerActive=Proxy_Servers_IP (192.168.0.5)
-      Hostname=Hostname in web ( Centos 7 or Centos 6)
+          Chỉnh file: vim /usr/local/etc/zabbix_agentd.conf
+          Server=Proxy_Servers_IP (192.168.0.5)
+          ServerActive=Proxy_Servers_IP (192.168.0.5)
+          Hostname=Hostname in web ( Centos 7 or Centos 6)
       
 Restart service: service zabbix-agent restart
 
