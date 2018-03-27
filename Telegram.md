@@ -34,7 +34,8 @@ Bước 4:
 Chỉnh sửa các tham số theo hình: 
 ![](image/j.png)
 - Nhắn tin bất kỳ đến bot
-- /usr/local/share/zabbix/alertscripts/zbxtg.py "LeMinh" "hello" "how are you ?"
+- /usr/lib/zabbix/alertscripts/zbxtg.py "LeMinh95" "hello" "how are you ?"
+![](image/k.png)
 
 Bước 5: Tạo Media Type
 ![](image/a.png)
