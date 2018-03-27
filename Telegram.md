@@ -50,6 +50,6 @@ Bước 7: Thêm media type trong user Admin
 ![](image/d.png)
 
 Bước 8: Tạo Action 
-![](image/ee.png)
+![](image/e.png)
 ![](image/f.png)
 ![](image/g.png)
