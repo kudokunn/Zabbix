@@ -49,9 +49,3 @@ Bước 8: Tạo Action
 ![](image/e.png)
 ![](image/f.png)
 ![](image/g.png)
-
-Last value: {ITEM.LASTVALUE1} ({TIME})
-zbxtg;graphs
-zbxtg;graphs_period=10800
-zbxtg;itemid:{ITEM.ID1}
-zbxtg;title:{HOST.HOST} - {TRIGGER.NAME}
