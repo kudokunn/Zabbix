@@ -53,3 +53,6 @@ Bước 8: Tạo Action
 ![](image/e.png)
 ![](image/f.png)
 ![](image/g.png)
+
+Bước 9:
+![](image/l.png)
