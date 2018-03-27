@@ -1,4 +1,5 @@
 Link: https://www.youtube.com/watch?v=vVIoC2pFscA
+
 Bước 1: Cài đặt và tải script :
 sudo apt-get update
 sudo apt-get install python-pip -y
@@ -34,17 +35,18 @@ Bước 4:
 
 Bước 5: Tạo Media Type
 a
-{ALERT.SENDTO}
-{ALERT.SUBJECT}
-{ALERT.MESSAGE}
+
 
 Bước 6: Tạo user trên web zabbix
 b
 c
+
 Bước 7: Thêm media type trong user Admin
 d 
+
 Bước 8: Tạo Action 
 ègf
+
 Last value: {ITEM.LASTVALUE1} ({TIME})
 zbxtg;graphs
 zbxtg;graphs_period=10800
