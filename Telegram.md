@@ -34,18 +34,21 @@ Bước 4:
 - /usr/local/share/zabbix/alertscripts/zbxtg.py "LeMinh" "hello" "how are you ?"
 
 Bước 5: Tạo Media Type
-a
+![](image/a.png)
 
 
 Bước 6: Tạo user trên web zabbix
-b
-c
+![](image/b.png)
+![](image/c.png)
+
 
 Bước 7: Thêm media type trong user Admin
-d 
+![](image/d.png)
 
 Bước 8: Tạo Action 
-ègf
+![](image/e.png)
+![](image/f.png)
+![](image/g.png)
 
 Last value: {ITEM.LASTVALUE1} ({TIME})
 zbxtg;graphs
