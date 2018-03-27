@@ -56,3 +56,16 @@ Bước 8: Tạo Action
 
 Bước 9:
 ![](image/l.png)
+
+Extra: Push Telegram vào một Channel
+Bước 1: Tạo channel và add bot làm admin channel. Lấy con bot trên vào channel
+Bước 2: Đặt tên cho channel. Ở đây channel là: nagios99
+Bước 3: Nhâp địa chỉ: https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc/sendMessage?chat_id=@nagios99_test&text=Test < Đây là khi channel public>
+ta lấy được chatid của channel: -1001264597307
+Bước 4: Đặt lại channel là private và test: https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc/sendMessage?chat_id=-1001264597307_test&text=Test
+Bước 5: trên server thêm username của channel: vim /tmp/uids.txt
+nagios99;private;-1001264597307
+Bước 6. Thêm vào Media của User Admin với Send to: @nagios99
+![](image/o.png)
+Bước 7: Kêt quả 
+![](image/p.png)
