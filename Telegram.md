@@ -29,7 +29,10 @@ vào web https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6m
 để lấy username: LeMinh95.
 
 Bước 4: 
-- sudo vim /usr/local/share/zabbix/alertscripts/zbxtg_settings.py và gõ: set fileformat:unix và lưu lại
+- sudo vim /usr/lib/zabbix/alertscripts/zbxtg.py và gõ: set fileformat:unix và lưu lại
+- sudo vim /usr/lib/zabbix/alertscripts/zbxtg-setting.py
+Chỉnh sửa các tham số theo hình: 
+![](image/j.png)
 - Nhắn tin bất kỳ đến bot
 - /usr/local/share/zabbix/alertscripts/zbxtg.py "LeMinh" "hello" "how are you ?"
 
