@@ -1,4 +1,4 @@
-Link: https://www.youtube.com/watch?v=vVIoC2pFscA
+Link tham khảo: https://www.youtube.com/watch?v=vVIoC2pFscA
 
 Bước 1: Cài đặt và tải script :
 
@@ -80,7 +80,7 @@ ta lấy được chatid của channel: -1001264597307
 
 Bước 4: Đặt lại channel là private và test: https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc/sendMessage?chat_id=-1001264597307_test&text=Test
 
-Bước 5: trên server thêm username của channel: vim /tmp/uids.txt
+Bước 5: Trên server thêm username của channel để zabbix biết đường gửi vào: vim /tmp/uids.txt
 nagios99;private;-1001264597307
 
 Bước 6. Thêm vào Media của User Admin với Send to: @nagios99
