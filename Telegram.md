@@ -60,10 +60,17 @@ Bước 8: Tạo Action
 ![](image/f.png)
 ![](image/g.png)
 
-Bước 9:
+Bước 9: Kết quả:
 ![](image/l.png)
 
-Extra: Push Telegram vào một Channel
+Bước 10: Muốn thêm ảnh vào tin nhắn đẩy vào Tele thêm phần sau vào Defalt Message
+
+    zbxtg;graphs
+    zbxtg;graphs_period=10800
+    
+vào Bước 8 tạo Action 
+
+Extra: Cài đặt Push Telegram vào một Channel
 Bước 1: Tạo channel và add bot làm admin channel. Lấy con bot trên vào channel
 
 Bước 2: Đặt tên cho channel. Ở đây channel là: nagios99
