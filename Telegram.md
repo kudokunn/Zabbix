@@ -14,23 +14,27 @@ zbxtg_settings.py
 https://drive.google.com/open?id=0B6H...
 
 Bước 2: Copy vào thư mục alertscript (thư mục được định nghĩa trong file config zabibx-server)
-sudo cp zbxtg.py /usr/lib/zabbix/alertscripts/
-sudo cp zbxtg_settings.py /usr/libzabbix/alertscripts/
-sudo chmod 755 /usr/local/share/zabbix/alertscripts/zbxtg.py
-sudo chmod 755 /usr/local/share/zabbix/alertscripts/zbxtg_settings.py
+
+    sudo cp zbxtg.py /usr/lib/zabbix/alertscripts/
+    sudo cp zbxtg_settings.py /usr/libzabbix/alertscripts/
+    sudo chmod 755 /usr/local/share/zabbix/alertscripts/zbxtg.py
+    sudo chmod 755 /usr/local/share/zabbix/alertscripts/zbxtg_settings.py
 
 Bước 3: Tạo bot trong botFather
 
 Telegram botfather
 /start
 /newbot
-=> Lấy được Token: 485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc
-vào web https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc/getUpdates
-để lấy username: LeMinh95.
 
-Bước 4: 
-- sudo vim /usr/lib/zabbix/alertscripts/zbxtg.py và gõ: set fileformat:unix và lưu lại
-- sudo vim /usr/lib/zabbix/alertscripts/zbxtg-setting.py
+=> Lấy được Token: 485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc
+ Và vào web https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc/getUpdates
+ sẽ lấy đượcusername: ở đâu user là: LeMinh95.
+
+Bước 4: Chỉnh file
+
+  - sudo vim /usr/lib/zabbix/alertscripts/zbxtg.py và gõ: set fileformat:unix và lưu lại
+  - sudo vim /usr/lib/zabbix/alertscripts/zbxtg-setting.py
+
 Chỉnh sửa các tham số theo hình: 
 ![](image/j.png)
 - Nhắn tin bất kỳ đến bot
@@ -59,13 +63,19 @@ Bước 9:
 
 Extra: Push Telegram vào một Channel
 Bước 1: Tạo channel và add bot làm admin channel. Lấy con bot trên vào channel
+
 Bước 2: Đặt tên cho channel. Ở đây channel là: nagios99
+
 Bước 3: Nhâp địa chỉ: https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc/sendMessage?chat_id=@nagios99_test&text=Test < Đây là khi channel public>
 ta lấy được chatid của channel: -1001264597307
+
 Bước 4: Đặt lại channel là private và test: https://api.telegram.org/bot485183556:AAED64Qp5qx9bYrF9gHQCgIMMHI94yZ6mpc/sendMessage?chat_id=-1001264597307_test&text=Test
+
 Bước 5: trên server thêm username của channel: vim /tmp/uids.txt
 nagios99;private;-1001264597307
+
 Bước 6. Thêm vào Media của User Admin với Send to: @nagios99
 ![](image/o.png)
+
 Bước 7: Kêt quả 
 ![](image/p.png)
