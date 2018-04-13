@@ -1,17 +1,19 @@
 Link: https://www.youtube.com/watch?v=vVIoC2pFscA
 
 Bước 1: Cài đặt và tải script :
-sudo apt-get update
-sudo apt-get install python-pip -y
-sudo pip install --upgrade pip
-sudo pip install requests
+
+    sudo apt-get update
+    sudo apt-get install python-pip -y
+    sudo pip install --upgrade pip
+    sudo pip install requests
 
 scripts :
-zbxtg.py
-https://drive.google.com/open?id=0B6H...
 
-zbxtg_settings.py
-https://drive.google.com/open?id=0B6H...
+    zbxtg.py
+    https://drive.google.com/open?id=0B6H...
+
+    zbxtg_settings.py
+    https://drive.google.com/open?id=0B6H...
 
 Bước 2: Copy vào thư mục alertscript (thư mục được định nghĩa trong file config zabibx-server)
 
