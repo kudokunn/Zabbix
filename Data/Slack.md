@@ -20,7 +20,7 @@ Incoming WebHook: là một ứng dụng trên Slack cho phép push message từ
 
 Ở đây ta chọn là channel là general vì kênh nào là kênh mặc định ban đầu có và các tất cả các thành viên mặc định bao đầu sẽ được add vào trong này
 
-## Bước 3: Tạo file slack.sh trong thư mục: vim /usr/lib/zabbix/alertscript/slack.sh
+## Bước 3: Tạo file slack.sh trong thư mục: vim /usr/lib/zabbix/alertscripts/slack.sh
  Nội dung: 
  
     #!/bin/sh
@@ -30,7 +30,7 @@ Incoming WebHook: là một ứng dụng trên Slack cho phép push message từ
 
     curl -k -X POST -d "payload={\"username\":\"zabbix\", \"text\":\"$message\"}" $webhook_url
  
- Gán quyền cho nó: chmod 755 /usr/lib/zabbix/alertscript/slack.sh
+ Gán quyền cho nó: chmod 755 /usr/lib/zabbix/alertscripts/slack.sh
  
  ## Bước 4: Cài trên trên Zabbix GUI
  
