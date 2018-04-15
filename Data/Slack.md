@@ -14,7 +14,7 @@ Incoming WebHook: là một ứng dụng trên Slack cho phép push message từ
 
 ![](/image/s2.PNG)
 
-3. Chọn Channel sẽ post vào. Sau đó ta sẽ được một webhook url. 
+3. Chọn Channel sẽ post vào. Sau đó ta sẽ được một webhook url. Cần Copy URL này 
 
 ![](/image/s3.PNG)
 
@@ -34,7 +34,7 @@ Incoming WebHook: là một ứng dụng trên Slack cho phép push message từ
  
  ## Bước 4: Cài trên trên Zabbix GUI
  
- * Vào Administration => Media types => Create media type. Cần nhớ webhook url đã tạo trước paste vào phần Script parametter.
+ * Vào Administration => Media types => Create media type. Cần nhớ webhook url đã tạo ở bước 2 paste vào phần Script parametter.
  
  ![](/image/s4.PNG)
  
