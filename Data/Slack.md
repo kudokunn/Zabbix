@@ -18,6 +18,8 @@ Incoming WebHook: là một ứng dụng trên Slack cho phép push message từ
 
 ![](/image/s3.PNG)
 
+Ở đây ta chọn là channel là general vì kênh nào là kênh mặc định ban đầu có và các tất cả các thành viên mặc định bao đầu sẽ được add vào trong này
+
 ## Bước 3: Tạo file slack.sh trong thư mục: vim /usr/lib/zabbix/alertscript/slack.sh
  Nội dung: 
  
