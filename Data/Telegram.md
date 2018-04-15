@@ -38,30 +38,30 @@ Bước 4: Chỉnh file
   - sudo vim /usr/lib/zabbix/alertscripts/zbxtg-setting.py
 
 Chỉnh sửa các tham số theo hình: 
-![](image/j.png)
+![](/image/j.png)
 - Nhắn tin bất kỳ đến bot
 - /usr/lib/zabbix/alertscripts/zbxtg.py "LeMinh95" "hello" "how are you ?"
-![](image/k.png)
+![](/image/k.png)
 
 Bước 5: Tạo Media Type
-![](image/a.png)
+![](/image/a.png)
 
 
 Bước 6: Tạo user trên web zabbix
-![](image/b.png)
-![](image/c.png)
+![](/image/b.png)
+![](/image/c.png)
 
 
 Bước 7: Thêm media type trong user Admin
-![](image/d.png)
+![](/image/d.png)
 
 Bước 8: Tạo Action 
-![](image/e.png)
-![](image/f.png)
-![](image/g.png)
+![](/image/e.png)
+![](/image/f.png)
+![](/image/g.png)
 
 Bước 9: Kết quả:
-![](image/l.png)
+![](/image/l.png)
 
 Bước 10: Muốn thêm ảnh vào tin nhắn đẩy vào Tele thêm phần sau vào Defalt Message
 
@@ -84,7 +84,7 @@ Bước 5: Trên server thêm username của channel để zabbix biết đườ
 nagios99;private;-1001264597307
 
 Bước 6. Thêm vào Media của User Admin với Send to: @nagios99
-![](image/o.png)
+![](/image/o.png)
 
 Bước 7: Kêt quả 
-![](image/p.png)
+![](/image/p.png)
