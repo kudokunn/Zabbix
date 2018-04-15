@@ -34,11 +34,11 @@ Incoming WebHook: là một ứng dụng trên Slack cho phép push message từ
  
  ## Bước 4: Cài trên trên Zabbix GUI
  
- Vào Administration => Media types => Create media type. Cần nhớ webhook url đã tạo trước paste vào phần Script parametter.
+ * Vào Administration => Media types => Create media type. Cần nhớ webhook url đã tạo trước paste vào phần Script parametter.
  
  ![](/image/s4.PNG)
  
-Vào Configuration Action Report problems to Zabbix administrators. Config theo hình 
+* Vào Configuration => Action => Report problems to Zabbix administrators. Config theo hình 
 
 ![](/image/s5.PNG)
 
@@ -46,12 +46,13 @@ Vào Configuration Action Report problems to Zabbix administrators. Config theo 
 
 ![](/image/s7.PNG)
 
-Administration User Admin Media Add 
+Ở đây chọn trigger Overload_network được tạo trong bài cảnh báo quan Telegram. Với điều kiện trigger là "Overload_network > 1M "
+* Vào Administration => User => Admin => Media => Add 
 
 ![](/image/s8.PNG)
 
 ### Bước 5: Test 
-Down một file băng lệnh wget để tạo trigger Overload_Network " Overload_Network > 1M "
+Down một file băng lệnh wget để tạo trigger Overload_Network.
 Kết quả:
 
 ![](/image/s9.PNG)
